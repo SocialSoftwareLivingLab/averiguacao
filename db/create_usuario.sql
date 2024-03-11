@@ -1,0 +1,6 @@
+CREATE TABLE usuario (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    instituto VARCHAR(255) NOT NULL,
+    setor VARCHAR(255) NOT NULL
+);
