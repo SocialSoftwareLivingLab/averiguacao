@@ -1,9 +1,6 @@
-
-
 import styles from '../styles/Login.module.css'; // Import CSS module for styling
 
 const LoginPage = () => {
-    const router = useRouter();
 
     const handleLogin = () => {
         window.location.href = '/landing';
@@ -12,13 +9,14 @@ const LoginPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.topbar}>
-            <button onClick={handleLogin}>Login</button>
+                <h1 className={styles.title}>Sistema de Averiguação Unicamp</h1>
+                <button onClick={handleLogin} className={styles.loginButton}>Entrar</button>
             </div>
             <div className={styles.content}>
                 <img src="/your-image.jpg" alt="Your Image" className={styles.image} />
             </div>
             <div className={styles.bottombar}>
-                <p>Logos and Text Information</p>
+                <p>PLACEHOLDER</p>
             </div>
         </div>
     );
